@@ -1,4 +1,9 @@
 $(function() {
+	setTimeout(function() {
+						$('.rule').addClass("animated bounceInRight");
+
+					}, 100);
+	
 	//	图像上传
 	var pic_ad = 'img/head-img.png';
 	var name = 'hjt';
@@ -17,32 +22,36 @@ $(function() {
 	function viprank(growthlevel) {
 		lightProgressBar(growthlevel);
 		$('.dbs-point').html('光点：' + growthlevel);
-//		等级一:
+		//		等级一:
 		if(0 < growthlevel && growthlevel <= 100) {
 			$('.dbs-grade').html('lv1');
-			$('.clt').css('background-color','yellow');
+			$('.drop').css('background-color', 'yellow');
 			$('.nav p').html("灯1");
-//		等级二
+			//		等级二
 		} else if(100 < growthlevel && growthlevel <= 300) {
 			$('.dbs-grade').html('lv2');
-			$('.clt').css('background-color','green');
+			$('.drop').css('background-color', 'green');
 			$('.nav p').html("灯2");
-//		等级三
+			//		等级三
 		} else if(300 < growthlevel && growthlevel <= 800) {
 			$('.dbs-grade').html('lv3');
-			$('.clt').css('background-color','pink');
+			$('.drop').css('background-color', 'pink');
 			$('.nav p').html("灯3");
-//		等级四
+			//		等级四
 		} else if(800 < growthlevel && growthlevel <= 1500) {
 			$('.dbs-grade').html('lv4');
-			$('.clt').css('background-color','coral');
-			$('.nav p').html("灯王");
-//		等级五
+
+			$('.drop img').click(function() {
+					$('.drop').css('background-color', 'coral');
+					$('.nav p').html("灯王");
+					
+				})
+				//		等级五
 		} else if(1500 < growthlevel && growthlevel <= 3000) {
 			$('.dbs-grade').html('lv5');
-			$('.clt').css('background-color','red');
+			$('.drop').css('background-color', 'red');
 			$('.nav p').html("灯神");
-			
+
 		}
 	}
 	viprank(1500); //最大为3000光点
@@ -63,13 +72,13 @@ $(function() {
 		$('.nav').slideToggle();
 		$(this).toggleClass('arr-top');
 	})
-	
-	$('.mt-1').find('.act').click(function(){
+
+	$('.mt-1').find('.act').click(function() {
 		var myindex = $(this).index();
 		console.log(myindex);
 		$(this).next().next().slideToggle();
-//		$('.act-content').slideDown();
-		
+		//		$('.act-content').slideDown();
+
 	})
 
 })

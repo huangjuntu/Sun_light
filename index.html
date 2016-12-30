@@ -8,6 +8,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>个人中心</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<!--<script type="text/javascript" src="js/jquery-ui.js"></script>-->
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/display.js"></script>
 	</head>
 
 	<body>
@@ -28,6 +33,7 @@
 				<div class="head-img">
 					<img src="">
 				</div>
+
 				<div class="head-dsb">
 					<!--js动态添加‘昵称’-->
 					<p class="dsb-name"></p>
@@ -47,46 +53,51 @@
 				</div>
 			</div>
 			<div class="arr-bottom"></div>
-			
+			<div class="nav">
+				<div class="drop">
+					<img src="img/light.png">
+				</div>
+				<div class="rule">
+					规则：<br>
+					1：点击返回了速度发货搜<br>
+					2：1点击返回了速度发货<br>
+					3：1点击返回了速度发货<br>
+				</div>
+
+				<p></p>
+			</div>
 			<section class="mt-1">
+				<!--<ul>
+					<li>最近活动1</li>
+					<li>最近活动2</li>
+					<li>最近活动3</li>
+				</ul>-->
 				<div class="lt-dsb">
 					<p class="act">最近活动1</p>
 					<button class="check-on">报名</button>
-					<p class="act-content">服务器仅在符号连接与目标文件或目录的所有者具有相同的用户ID时才使用它。
-							简而言之，只有当符号连接和符号连接指向的目标文件或目录的所有者是同一用户时，
-							才会使用符号连接。如果该配置选项位于配置段中，将会被忽略。
-						</p>
+					<p class="act-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务器仅在符号连接与目标文件或目录的所有者具有相同的用户ID时才使用它。 简而言之，只有当符号连接和符号连接指向的目标文件或目录的所有者是同一用户时， 才会使用符号连接。如果该配置选项位于配置段中，将会被忽略。
+					</p>
 				</div>
 				<div class="lt-dsb">
 					<p class="act">最近活动2</p>
 					<button class="check-on">报名</button>
-					<p class="act-content" style="display: none;">服务器仅在符号连接与目标文件或目录的所有者具有相同的用户ID时才使用它。
-							简而言之，只有当符号连接和符号连接指向的目标文件或目录的所有者是同一用户时，
-							才会使用符号连接。如果该配置选项位于配置段中，将会被忽略。
-						</p>
+					<p class="act-content" style="display: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务器仅在符号连接与目标文件或目录的所有者具有相同的用户ID时才使用它。 简而言之，只有当符号连接和符号连接指向的目标文件或目录的所有者是同一用户时， 才会使用符号连接。如果该配置选项位于配置段中，将会被忽略。
+					</p>
 				</div>
 				<div class="lt-dsb">
 					<p class="act">最近活动3</p>
 					<button class="check-on">报名</button>
-					<p class="act-content" style="display: none;">服务器仅在符号连接与目标文件或目录的所有者具有相同的用户ID时才使用它。
-							简而言之，只有当符号连接和符号连接指向的目标文件或目录的所有者是同一用户时，
-							才会使用符号连接。如果该配置选项位于配置段中，将会被忽略。
-						</p>
+					<p class="act-content" style="display: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务器仅在符号连接与目标文件或目录的所有者具有相同的用户ID时才使用它。 简而言之，只有当符号连接和符号连接指向的目标文件或目录的所有者是同一用户时， 才会使用符号连接。如果该配置选项位于配置段中，将会被忽略。
+					</p>
 				</div>
 			</section>
 
 			<!--<footer>
 
 			</footer>-->
-			<div class="nav">
 
-				<img class="clt"></img>
-				<p></p>
-			</div>
 		</div>
 
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
 		<script>
 			(function(doc, win) {
 				var docEl = doc.documentElement,

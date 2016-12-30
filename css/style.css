@@ -161,6 +161,7 @@ header {
     overflow: hidden;
 }
 
+
 .head-img img {
 	width: 1.43rem;
 	height: 1.43rem;
@@ -188,22 +189,38 @@ width: 7.5rem;
 
 .nav p {
     width: 0.7rem;
-    margin-top: 1.45rem;
+    margin-top: 1.9rem;
     font-size: 0.3rem;
     float: left;
-    margin-left: 0.5rem;
+    /*margin-left: 0.5rem;*/
 }
 
 
-.clt {
+.drop {
     width: 1.5rem;
     height: 2rem;
-    background: url(../img/light.png) no-repeat;
-    background-size: 1.5rem 2rem;
+    /*background: url(../img/light.png) no-repeat;*/
+    /*background-size: 1.5rem 2rem;*/
     border-style: none;
-    margin-left: 3rem;
+    margin-left: 0.7rem;
+    margin-top: 0.2rem;
+    float: left;
+}
+.drop img{
+	 width: 1.5rem;
+    height: 2rem;
+}
+.rule{
+	font-size: 0.3rem;
+    width: 3.5rem;
+    height: 2rem;
+    /* background: url(../img/light.png) no-repeat; */
+    /* background-size: 1.5rem 2rem; */
+    border-style: none;
+    margin-left: 0.8rem;
     margin-top: 0.3rem;
     float: left;
+    
 }
 
 .rcm {
@@ -219,7 +236,7 @@ width: 7.5rem;
 }
 
 .news {
-    font-size: 0.28rem;
+    /*font-size: 0.28rem;*/
     color: #fff;
     height: 0.5rem;
     margin-top: 0.2rem;
@@ -228,14 +245,14 @@ width: 7.5rem;
 .news .dbs-point {
 	float: left;
 	display: block;
-	font-size: 0.2rem;
+	font-size: 0.25rem;
 }
 
 .news .dbs-grade {
 	float: right;
 	display: block;
 	margin-right: 0.1rem;
-	font-size: 0.2rem;
+	font-size: 0.25rem;
 }
 
 /*.ps-lt {
@@ -319,33 +336,33 @@ width: 7.5rem;
 }
 
 .check-on{
-	display: block;
-	position: absolute;
-	top: 0.14rem;
-	right: 0.1rem;
-	width: 0.9rem;
-	height: 0.4rem;
-	/* background-size: 0.85rem 0.58rem; */
-	cursor: pointer;
-	border-radius: 0.1rem;
-	border: 1px solid #9D9D9D;
-	background: #EFEFF4;
-	font-family: "微软雅黑";
-	font-size: 0.14rem;
+    display: block;
+    position: absolute;
+    top: 0.05rem;
+    right: 0.1rem;
+    width: 1.2rem;
+    height: 0.6rem;
+    /* background-size: 0.85rem 0.58rem; */
+    cursor: pointer;
+    border-radius: 0.1rem;
+    border: 1px solid #9D9D9D;
+    background: #EFEFF4;
+    font-family: "微软雅黑";
+    /*font-size: 0.14rem;*/
 }
 
 .check-off{
 	display: block;
 	position: absolute;
-	top: 0.14rem;
-	right: 0.1rem;
-	width: 0.9rem;
-	height: 0.4rem;
+    top: 0.05rem;
+    right: 0.1rem;
+    width: 1.2rem;
+    height: 0.6rem;
 	cursor: pointer;
 	border-radius: 0.1rem;
 	border: 1px solid #9D9D9D;
 	background: #3F9F00;
-	font-size: 0.14rem;
+	/*font-size: 0.14rem;*/
 }
 
 input,
@@ -360,10 +377,10 @@ textarea {
 }
 
 .mt-1 {
-	margin-top: 0.5rem;
-    height: 5.3rem;
+    margin-top: 0.5rem;
+    /* height: 4rem; */
     overflow: auto;
-    /*background: pink;*/
+    background: pink;
 }
 
 .mt-2 {
