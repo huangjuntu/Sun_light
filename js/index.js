@@ -21,26 +21,27 @@ $(function() {
 		if(0 < growthlevel && growthlevel <= 100) {
 			$('.dbs-grade').html('lv1');
 			$('.clt').css('background-color','yellow');
-			$('.pt-line p').html("灯1");
+			$('.nav p').html("灯1");
 //		等级二
 		} else if(100 < growthlevel && growthlevel <= 300) {
 			$('.dbs-grade').html('lv2');
 			$('.clt').css('background-color','green');
-			$('.pt-line p').html("灯2");
+			$('.nav p').html("灯2");
 //		等级三
 		} else if(300 < growthlevel && growthlevel <= 800) {
 			$('.dbs-grade').html('lv3');
 			$('.clt').css('background-color','pink');
+			$('.nav p').html("灯3");
 //		等级四
 		} else if(800 < growthlevel && growthlevel <= 1500) {
 			$('.dbs-grade').html('lv4');
 			$('.clt').css('background-color','coral');
-			$('.pt-line p').html("灯王");
+			$('.nav p').html("灯王");
 //		等级五
 		} else if(1500 < growthlevel && growthlevel <= 3000) {
 			$('.dbs-grade').html('lv5');
 			$('.clt').css('background-color','red');
-			$('.pt-line p').html("灯神");
+			$('.nav p').html("灯神");
 			
 		}
 	}
@@ -51,9 +52,9 @@ $(function() {
 		$(this).toggleClass('check-off');
 		var t = $(this).attr('class');
 		if(t == 'check-on check-off') {
-			$(this).html('未参加');
-		} else {
 			$(this).html('已参加');
+		} else {
+			$(this).html('报名');
 		}
 	})
 
@@ -61,6 +62,14 @@ $(function() {
 	$('.arr-bottom').click(function() {
 		$('.nav').slideToggle();
 		$(this).toggleClass('arr-top');
+	})
+	
+	$('.mt-1').find('.act').click(function(){
+		var myindex = $(this).index();
+		console.log(myindex);
+		$(this).next().next().slideToggle();
+//		$('.act-content').slideDown();
+		
 	})
 
 })

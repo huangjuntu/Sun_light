@@ -73,8 +73,7 @@ li {
 }
 
 #_centent {
-	padding-bottom: 0.8rem;
-	;
+	padding-bottom: 0.1rem;
 }
 
 header {
@@ -181,58 +180,30 @@ header {
 }
 
 .nav {
-	width: 7.5rem;
-	height: 1.5rem;
-	margin-top: 0.5rem;
-	background-color: #fff;
+width: 7.5rem;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    background-color: #fff;
 }
 
-.nav ul li {
-    position: relative;
-    float: left;
-    width: 2.48rem;
-    height: 1.4rem;
-    font-size: 0.3rem;
-    margin-top: 0.05rem;
-    line-height: 0.55rem;
-    text-align: center;
-}
-
-.nav ul li p {
-    position: absolute;
-    left: 1.2rem;
+.nav p {
     width: 0.7rem;
-    margin-top: 0.45rem;
-}
-
-.pt-line {
-	border-left: 1px solid #dddddd;
-	border-right: 1px solid #dddddd;
-}
-
-.idt {
-	display: block;
-    position: absolute;
-    top: 0.5rem;
-    left: 0.78rem;
+    margin-top: 1.45rem;
+    font-size: 0.3rem;
     float: left;
-    width: 0.28rem;
-    height: 0.36rem;
-    background: url(../img/indent.png) no-repeat;
-    background-size: 0.28rem 0.36rem;
+    margin-left: 0.5rem;
 }
+
 
 .clt {
-	display: block;
-    position: absolute;
-    top: 0.35rem;
-    left: 0.58rem;
-    float: left;
-    width: 0.5rem;
-    height: 0.7rem;
+    width: 1.5rem;
+    height: 2rem;
     background: url(../img/light.png) no-repeat;
-    background-color: red;
-    background-size: 0.5rem 0.7rem;
+    background-size: 1.5rem 2rem;
+    border-style: none;
+    margin-left: 3rem;
+    margin-top: 0.3rem;
+    float: left;
 }
 
 .rcm {
@@ -267,32 +238,42 @@ header {
 	font-size: 0.2rem;
 }
 
-.ps-lt {
+/*.ps-lt {
 	width: 7.5rem;
 	height: 100%;
 	background-color: #fff;
-}
+}*/
 
 .lt-dsb {
-	position: relative;
-	/*7.35rem;*/
-	height: 0.66rem;
-	line-height: 0.66rem;
-	margin-left: 0.15rem;
-	border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    /* height: 0.66rem; */
+    /* line-height: 0.66rem; */
+    /* margin-left: 0.15rem; */
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+    width: 7.5rem;
 }
 
-.lt-dsb p {
-	margin-left: 0.2rem;
-	font-size: 0.24rem;
-	color: #838383;
+.lt-dsb .act {
+    margin-left: 0.2rem;
+    font-size: 0.24rem;
+    color: #838383;
+    border-bottom: 1px solid #e5e5e5;
+    height: 0.7rem;
+    line-height: 0.7rem;
+}
+.lt-dsb .act-content{
+    margin-left: 0.2rem;
+    font-size: 0.24rem;
+    color: #838383;
+    line-height: 0.4rem;
+    margin-right: 0.2rem;
 }
 
-.act{
+/*.act{
     position: relative;
     height: 2rem;
     line-height: 0.4rem;
-    /* margin-left: 0.15rem; */
     border-bottom: 1px solid #e5e5e5;
     overflow: hidden;
 }
@@ -302,7 +283,7 @@ header {
 	color: #838383;
 	margin-right: 0.2rem;
 	overflow: hidden;
-}
+}*/
 
 
 .arr-right {
@@ -337,7 +318,7 @@ header {
     
 }
 
-.check-on {
+.check-on{
 	display: block;
 	position: absolute;
 	top: 0.14rem;
@@ -353,7 +334,7 @@ header {
 	font-size: 0.14rem;
 }
 
-.check-off {
+.check-off{
 	display: block;
 	position: absolute;
 	top: 0.14rem;
@@ -380,6 +361,9 @@ textarea {
 
 .mt-1 {
 	margin-top: 0.5rem;
+    height: 5.3rem;
+    overflow: auto;
+    /*background: pink;*/
 }
 
 .mt-2 {
